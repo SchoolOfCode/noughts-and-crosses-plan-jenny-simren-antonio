@@ -1,7 +1,11 @@
-import React from "react";
+import './Square.css';
 
-function Square() {
-   return <div>Square</div>;
+function Square({ index, clickHandler }) {
+  return (
+    <div id={index} className="square" onClick={clickHandler}>
+      X
+    </div>
+  );
 }
 
 export default Square;
