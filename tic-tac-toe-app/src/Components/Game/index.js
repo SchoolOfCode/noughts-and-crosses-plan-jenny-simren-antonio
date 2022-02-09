@@ -20,9 +20,18 @@ function Game() {
   const [xTurn, setXTurn] = useState(true);
 
   function playerMove(e) {
+    
     let index = e.target.id;
-    if (e.target.value === null) setBoard(...board.slice(0, index));
+   
+    let symbol;
+    if (xTurn === true) { symbol = "X" } else { symbol = "O" }
+ 
+    if (e.target.value === undefined) { setBoard([...board.slice(0, index), symbol, ...board.slice(index+1)]) };
+
+    setXTurn(!xTurn);
   }
+
+
   return (
     <div className="Game">
       <Board board={board} clickHandler={playerMove} />

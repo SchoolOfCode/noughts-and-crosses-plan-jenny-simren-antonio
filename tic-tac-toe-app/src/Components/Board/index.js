@@ -6,7 +6,7 @@ function Board({ board, clickHandler }) {
   return (
     <div className="board-container">
       {board.map((square, index) => {
-        return <Square key={index} index={index} clickHandler={clickHandler} />;
+        return <Square key={index} index={index} value={board[index]} clickHandler={clickHandler} />;
       })}
     </div>
   );

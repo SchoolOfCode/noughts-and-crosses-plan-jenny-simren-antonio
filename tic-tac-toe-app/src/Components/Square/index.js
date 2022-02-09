@@ -1,9 +1,9 @@
 import './Square.css';
 
-function Square({ index, clickHandler }) {
+function Square({ index, clickHandler, value }) {
   return (
     <div id={index} className="square" onClick={clickHandler}>
-      X
+      {value}
     </div>
   );
 }
