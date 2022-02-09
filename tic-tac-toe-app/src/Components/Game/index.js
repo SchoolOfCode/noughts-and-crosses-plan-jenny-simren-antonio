@@ -78,8 +78,11 @@ function Game() {
       <h2>Player Turn: {xTurn ? 'X' : 'O'}</h2>
 
       {winner && winner === 'draw' && <h2 className="draw">It's a draw</h2>}
-      {winner && winner !== 'draw' && (
-        <h2 className="winner">The winner is {winner}</h2>
+      {winner && winner === 'O' && (
+        <h2 className="winner-o">The winner is {winner}</h2>
+      )}
+      {winner && winner === 'X' && (
+        <h2 className="winner-x">The winner is {winner}</h2>
       )}
     </div>
   );

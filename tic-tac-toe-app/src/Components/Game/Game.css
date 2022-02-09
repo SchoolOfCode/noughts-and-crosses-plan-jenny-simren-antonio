@@ -16,9 +16,17 @@
   border-radius: 10px;
 }
 
-.winner {
+.winner-o {
   font-size: 2rem;
-  background-color: #16a085;
+  background-color: #8e44ad;
+  color: rgb(235, 235, 235);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.winner-x {
+  font-size: 2rem;
+  background-color: #3498db;
   color: rgb(235, 235, 235);
   padding: 0.5rem 1rem;
   border-radius: 10px;
